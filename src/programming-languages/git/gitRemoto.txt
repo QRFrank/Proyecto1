@@ -1,0 +1,11 @@
+----PUBLICAR EL GIT DE FORMA REMOTA EN GITHUB----
+
+crear una cuenta en githug
+
+echo "# projectName" >> README.md // projectName (Nombre del Proyecto)
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main // o en la rama master
+git remote add origin https://github.com/QRFrank/projectName.git // Agregar en repositorio remoto
+git push -u origin main (o rama master) // Enviar al repositorio remoto
