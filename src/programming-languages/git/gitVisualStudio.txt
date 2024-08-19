@@ -1,0 +1,5 @@
+-> Control de codigo fuente (Ctrl+Mayus+G)
+    ->Cambios // se muetra el archivo anterior con el nuevo 
+        click en ( + // Almacenar cambios Provisionamente)
+        click en ( - // Cancelar Almacenamiento provisional de los cambios)
+Mensaje (Ctrl+Enter para confirmar en "master") "Añadir el mensaje "
