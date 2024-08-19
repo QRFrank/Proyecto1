@@ -6,16 +6,25 @@
 
 ----VER EL ESTADO DEL PROYECTO EN EL REPOSITORIO----
     git status
-    git status -s// M(modificado) D(eliminado) ??(nuevo archivo) A(agregado)
+
+    git status -s
+    --M(modificado) D(eliminado) ??(nuevo archivo) A(agregado)
 
 ----AGREGAR LOS ARCHIVOS AL REPOSITORIO----
-    git add file-name // file-name (nombre del archivo)
-    git add --all // AGREGAR TODOS LOS ARCHIVOS
+    git add file-name 
+    --file-name (nombre del archivo)
+    
+    git add --all 
+    --AGREGAR TODOS LOS ARCHIVOS
 
-----HACER COMMIT AL PROYECTO----
+----HACER COMMIT AL PROYECTO (FOTOGRAFIAS)----
     git commit -m "message" // message (comentar los cambios que se hizo al proyecto)
 
+----VER LOS COMMIT(FOTOGRAFIAS)----
+    git log --oneline
 
+
+************************************************************************************************
 ----ARCHIVO DE CONFIGURACION QUE SERAN IGNORADOS POR GIT----
     archivo (.gitignore)
     codigo(
@@ -24,3 +33,41 @@
         *.jpg
         *.mp4
     )
+
+
+*************************************************************************************************
+----BRANCH O RAMAS----
+    HEAD // es el lugar donde se esta trabajando
+    # // commit
+    $ // merge combinacion
+
+                  BRANCH 1_____#_____#_____
+                         *                 *
+    MASTER___#____#_____*____ ______________*___ ____$_____
+                             *                  *  (HEAD)
+                     BRANCH 2 *_______#________*   
+
+
+    git branch 
+    --indica en que rama se esta
+    * master // rama principal
+
+    git checkout -b nameNewBranch
+    -- checkout (Hace un cambio de rama)
+    -- -b (nueva rama)
+    -- nameNewBranch (nombre de la nueva rama)
+
+    git branch 
+      master 
+    * nameNewBranch
+
+----COMBINACION DE LAS RAMAS----
+    git checkout maste 
+    -- poscicionarse en la rama master
+
+    git branch 
+    * master 
+      nameNewBranch
+
+    git merge nameNewBranch
+    -- combinacion de las 2 ramas (mergchear)
