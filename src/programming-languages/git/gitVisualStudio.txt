@@ -3,3 +3,4 @@
         click en ( + // Almacenar cambios Provisionamente)
         click en ( - // Cancelar Almacenamiento provisional de los cambios)
 Mensaje (Ctrl+Enter para confirmar en "master") "Añadir el mensaje "
+                Confirmacion
