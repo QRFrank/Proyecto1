@@ -1,0 +1,26 @@
+----CONFIGUARION DEL GIT (USUARIO, EMAIL, OTROS)----
+    git config --global 
+
+----CREACION DEL REPOSITORIO LOCAL----
+    git init
+
+----VER EL ESTADO DEL PROYECTO EN EL REPOSITORIO----
+    git status
+    git status -s// M(modificado) D(eliminado) ??(nuevo archivo) A(agregado)
+
+----AGREGAR LOS ARCHIVOS AL REPOSITORIO----
+    git add file-name // file-name (nombre del archivo)
+    git add --all // AGREGAR TODOS LOS ARCHIVOS
+
+----HACER COMMIT AL PROYECTO----
+    git commit -m "message" // message (comentar los cambios que se hizo al proyecto)
+
+
+----ARCHIVO DE CONFIGURACION QUE SERAN IGNORADOS POR GIT----
+    archivo (.gitignore)
+    codigo(
+        .env // donde se guardan las variables de entorno(suele ver contraseñas)
+        node_module // cada que se haga un npm install
+        *.jpg
+        *.mp4
+    )
